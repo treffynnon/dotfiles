@@ -14,7 +14,7 @@ setlocal omnifunc=syntaxcomplete#Complete
   " Map NERD tree toggle to F2
 map <F2> :NERDTreeToggle<CR>
 map <F3> :TlistToggle<CR>
-
+colorscheme lucius
   " Set indentation settings
 set shiftwidth=4 softtabstop=4 tabstop=4
 set expandtab
@@ -40,6 +40,6 @@ highlight SpecialKey guifg=LightGray ctermfg=LightGray "set cinkeys=0{,0},:,0#,!
 
 " To get nice CWD with ~ substitution
 function! CurDir()
-        let curdir = substitute(getcwd(), '/Users/alfredo', "~/", "g")
+        let curdir = substitute(getcwd(), '/home/simon', "~/", "g")
             return curdir
         endfunction
