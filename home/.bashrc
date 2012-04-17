@@ -81,6 +81,11 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias t='task'
+tas() { task "$1" start; }
+tap() { task "$1" stop; }
+tad() { task "$1" done; }
+tsw() { task "$1" stop; task "$2" start; }
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
