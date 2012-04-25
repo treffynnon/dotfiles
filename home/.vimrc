@@ -43,3 +43,5 @@ function! CurDir()
         let curdir = substitute(getcwd(), '/home/simon', "~/", "g")
             return curdir
         endfunction
+
+call pathogen#infect()
