@@ -22,4 +22,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export PATH=$PATH:/var/lib/gems/1.8/bin
-[[ $- == *i* ]]   &&   . ~/git-prompt/git-prompt.sh
+[[ $- == *i* ]] && . ~/.git-prompt/git-prompt.sh
