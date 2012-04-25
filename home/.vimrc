@@ -44,4 +44,9 @@ function! CurDir()
             return curdir
         endfunction
 
+" Setup pathogen managed plugins use :Helptext to generate docs
 call pathogen#infect()
+" Open a NERDTree if no files were specified when vim was started
+autocmd vimenter * if !argc() | NERDTree | endif
+" Auto change the directory to the current file I'm working on
+autocmd BufEnter * lcd %:p:h
